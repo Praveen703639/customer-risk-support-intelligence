@@ -1,0 +1,133 @@
+{
+    "nodes": 1441,
+    "edges": 15499,
+    "node_type_counts": {
+        "customer": 1409,
+        "gender": 2,
+        "contract": 3,
+        "internet_service": 3,
+        "payment_method": 4,
+        "phone_service": 2,
+        "tech_support": 3,
+        "online_security": 3,
+        "online_backup": 3,
+        "device_protection": 3,
+        "streaming_tv": 3,
+        "streaming_movies": 3
+    },
+    "relationship_counts": {
+        "HAS_GENDER": 1409,
+        "HAS_CONTRACT": 1409,
+        "HAS_INTERNET_SERVICE": 1409,
+        "HAS_PAYMENT_METHOD": 1409,
+        "HAS_PHONE_SERVICE": 1409,
+        "HAS_TECH_SUPPORT": 1409,
+        "HAS_ONLINE_SECURITY": 1409,
+        "HAS_ONLINE_BACKUP": 1409,
+        "HAS_DEVICE_PROTECTION": 1409,
+        "HAS_STREAMING_TV": 1409,
+        "HAS_STREAMING_MOVIES": 1409
+    },
+    "top_degree_centrality_nodes": [
+        {
+            "node": "phone_service:Yes",
+            "centrality": 0.8930555555555556,
+            "node_type": "phone_service"
+        },
+        {
+            "node": "contract:Month-to-month",
+            "centrality": 0.5368055555555555,
+            "node_type": "contract"
+        },
+        {
+            "node": "gender:Male",
+            "centrality": 0.5013888888888889,
+            "node_type": "gender"
+        },
+        {
+            "node": "tech_support:No",
+            "centrality": 0.48750000000000004,
+            "node_type": "tech_support"
+        },
+        {
+            "node": "online_security:No",
+            "centrality": 0.48680555555555555,
+            "node_type": "online_security"
+        },
+        {
+            "node": "gender:Female",
+            "centrality": 0.47708333333333336,
+            "node_type": "gender"
+        },
+        {
+            "node": "online_backup:No",
+            "centrality": 0.4486111111111111,
+            "node_type": "online_backup"
+        },
+        {
+            "node": "device_protection:No",
+            "centrality": 0.4326388888888889,
+            "node_type": "device_protection"
+        },
+        {
+            "node": "internet_service:Fiber optic",
+            "centrality": 0.4256944444444445,
+            "node_type": "internet_service"
+        },
+        {
+            "node": "streaming_tv:No",
+            "centrality": 0.40555555555555556,
+            "node_type": "streaming_tv"
+        },
+        {
+            "node": "streaming_movies:No",
+            "centrality": 0.3944444444444445,
+            "node_type": "streaming_movies"
+        },
+        {
+            "node": "streaming_movies:Yes",
+            "centrality": 0.36736111111111114,
+            "node_type": "streaming_movies"
+        },
+        {
+            "node": "streaming_tv:Yes",
+            "centrality": 0.35625,
+            "node_type": "streaming_tv"
+        },
+        {
+            "node": "internet_service:DSL",
+            "centrality": 0.33611111111111114,
+            "node_type": "internet_service"
+        },
+        {
+            "node": "payment_method:Electronic check",
+            "centrality": 0.32916666666666666,
+            "node_type": "payment_method"
+        },
+        {
+            "node": "device_protection:Yes",
+            "centrality": 0.32916666666666666,
+            "node_type": "device_protection"
+        },
+        {
+            "node": "online_backup:Yes",
+            "centrality": 0.31319444444444444,
+            "node_type": "online_backup"
+        },
+        {
+            "node": "online_security:Yes",
+            "centrality": 0.275,
+            "node_type": "online_security"
+        },
+        {
+            "node": "tech_support:Yes",
+            "centrality": 0.2743055555555556,
+            "node_type": "tech_support"
+        },
+        {
+            "node": "contract:Two year",
+            "centrality": 0.23333333333333334,
+            "node_type": "contract"
+        }
+    ]
+}

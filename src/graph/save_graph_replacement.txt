@@ -1,0 +1,51 @@
+﻿from pathlib import Path
+
+import networkx as nx
+import pandas as pd
+
+
+def save_graph(
+    graph: nx.Graph,
+    output_path: Path,
+) -> None:
+
+    for _, attributes in graph.nodes(data=True):
+
+        for key, value in list(attributes.items()):
+
+            if value is None:
+                attributes[key] = ""
+
+            elif pd.isna(value):
+                attributes[key] = ""
+
+            elif hasattr(value, "item"):
+                attributes[key] = value.item()
+
+            else:
+                attributes[key] = value
+
+    for _, _, attributes in graph.edges(data=True):
+
+        for key, value in list(attributes.items()):
+
+            if value is None:
+                attributes[key] = ""
+
+            elif pd.isna(value):
+                attributes[key] = ""
+
+            elif hasattr(value, "item"):
+                attributes[key] = value.item()
+
+            else:
+                attributes[key] = value
+
+    nx.write_graphml(
+        graph,
+        output_path,
+    )
+
+
+def main():
+    pass
